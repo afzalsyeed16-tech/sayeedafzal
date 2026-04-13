@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head><title>Responsive Profile</title></head>
+
+<header>
+
+<div id="col1">
+<img src="images/background1.jpeg" height="100;" width="100%";> 
+</div>
+<div id="col2">Banner</div>
+
+</header>
+
+<style>
+
+div{
+
+border:1px solid black;
+padding:10px;
+
+}
+
+#col1{
+height:100px;
+width:20%;
+margin:10px;
+border-radius:100px;
+
+
+}
+
+#col2{
+height:200px;
+width:60%;
+margin:10px;
+
+}
+
+header{
+
+border:1px solid black;
+display:flex;
+//flex-direction:column;
+flex-direction:row;
+//justify-content:start;
+//justify-content:end;
+justify-content:center;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:5px;
+
+}
+
+footer{
+//background:red;
+display:flex;
+flex-direction:column;
+margin-top:100px;
+clear:both;
+
+}
+
+footer #info #sitemap #socilmedia{
+
+witdh:100px;
+padding:10px;
+}
+
+
+#sitemap ul li{
+
+list-style:none;
+text-align:left;
+margin-left:40%;
+
+}
+
+#socialmedia ul li{
+
+list-style:none;
+text-align:left;
+margin-left:40%;
+
+}
+
+main{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+.cardstyle{
+
+width:60%;
+height:180px;
+box-shadow:10px 10px 10px black;
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+
+ body{background:green;}
+ #col2{display:none;}
+ header{justify-content:center;}
+ 
+.cardstyle{
+margin:auto;
+margin-top:40px;
+}
+
+
+nav ol li{
+margin-right:50px;
+display:block;
+
+}
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+ {
+
+body{background:yellow;}
+#col1{width:15%; height:80px;}
+#col2{width:70%;}
+
+main{
+justify-content:center;
+margin-top:30px;
+}
+
+.cardstyle{
+width:40%;
+margin:10px;
+
+}
+
+ nav ol li{
+display:inline;
+
+}
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+ {
+  body{background:pink;}
+  #col1{width:15%;Height:120px;}
+  #col2{height:200px;}
+
+.cardstyle{
+width:25%;
+margin:10px;
+
+
+}
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+body{background:teal;}
+#col1{display:none;}
+#col2{width:90%;height:400px;margin:auto;}
+
+}
+.pic{
+width:100%;
+}
+
+nav{
+width:90%;
+//background:red;
+margin:auto;
+text-align:center;
+margin:50px;
+
+
+}
+
+nav ol li{
+list-style:none;
+background:teal;
+margin-left:-2px;
+padding:20px;
+text-align:center;
+cursor:pointer;
+box-shadow:10px 10px 10px black;
+transition:0.5s;
+}
+
+nav ol li:hover{
+
+background:white;
+trasnform:scale(1.10);
+
+}
+
+a:link{color:yellow;text-decoration:none;}
+a:visited{color:yellow;}
+a:hover{text-decoration:underline; color:red;}
+a:active{}
+
+</style>
+
+<body>
+
+<nav>
+
+<ol>
+
+<li><a href="index.html">Home</li>
+<li><a href="practice.html">practice work</li>
+<li><a href="navbar.html">navbar</li>
+<li><a href="http://google.com">google</li>
+
+</ol>
+
+</nav>
+
+<main>
+<div class="cardstyle" id="card1">
+<img src="images/background7.jpg" class="pic" height="100%">
+
+</div>
+
+
+<div class="cardstyle" id="card2">
+<img src="images/background2.jpg" class="pic" height="100%">
+
+</div>
+<div class="cardstyle" id="card3">
+<img src="images/background3.jpeg" class="pic" height="100%">
+
+</div>
+<div class="cardstyle" id="card4">
+<img src="images/background4.jpg" class="pic" height="100%">
+</div>
+<div class="cardstyle" id="card5">
+<img src="images/background5.jpg" class="pic" height="100%">
+</div>
+<div class="cardstyle" id="card6">
+<img src="images/background6.jpg" class="pic" height="100%">
+</div>
+
+</main>
+
+<footer>
+<div id="info">
+<h1>
+All Right Reserved
+<!-- </h1>
+<h1>10<sup>th</sup></h1>
+<h1>10<sub>th</sub></h1>
+-->
+</div>
+<div id="sitemap">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="http:"#">Project work</a></li>
+<li><a href="#">project</a></li>
+<li><a href="http://google.com">google</a></li>
+</ul>
+</div>
+
+<div id="socialmedia">
+<details>
+<summary>Social Media</summary>
+</div>
+<ul>
+<li><a href="http://facebook.com">facebook</a></li>
+<li><a href="http://instagram.com">Instagram</a></li>
+<li><a href="http"//x.com">X</a></li>
+<li><a href="http://youtube.com">Youtube</a></li>
+
+</ul>
+</details>
+</div>
+</footer>
+</body>
+
+
+
+
+</html>

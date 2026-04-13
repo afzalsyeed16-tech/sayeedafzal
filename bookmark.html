@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+<style>
+html
+{
+scroll-behavior:smooth;
+}
+
+@keyframes blink
+{
+from{opacity:0;color:pink;}
+to{opacity:1;color:lavender;}
+}
+
+header
+{
+text-align:center;
+box-sizing:border-box;
+background:black;
+padding:30px;
+color:white;
+font-size:50px;
+box-shadow:10px 10px 10px gray;
+margin-top:10px;
+}
+
+#my
+{
+color:white;
+transition:0.50s;
+animation:blink 1s infinite alternate;
+}
+
+@keyframes change
+{
+10%{content:"War in Gulf";color:rgb(255, 204, 0);}
+20%{content:"Dhurandhar the Revenge";}
+30%{content:"Rain in Delhi";background:rgb(6, 240, 135);}
+40%{content:"Lakshay Exhibition";color:rgb(63, 13, 228);}
+50%{content:"LPG Cylinder Crisis";color:white;background:black;}
+60%{content:"India Wins Wordcup";color: #1672eb;}
+70%{content:"Stock Market down";color: blueviolet;}
+80%{content:"Rain in Delhi";}
+90%{content:"Digital Marketing";}
+100%{content:"Something big is coming";}
+}
+
+#news
+{
+color:lavender;
+}
+
+#news::after
+{
+content:"Today";
+transition:2s;
+animation:change 12s infinite alternate;
+}
+
+section
+{
+box-shadow:10px 10px 10px gray;
+text-align:justify;
+text-indent:140px;
+padding:50px;
+border:2px black ridge;
+}
+
+section h1
+{
+text-align:center;
+}
+
+li
+{
+display:inline;
+padding:130px;
+margin-top:20px;
+}
+
+</style>
+
+<header>
+    <span id="my">
+        "hyperlink bookmark"
+        <div id="news">
+            News:
+        </div>
+    </span>
+</header>
+<br>
+<ol>
+    <li>
+        <a href="#services">Services</a>
+    </li>
+     <li>
+        <a href="#policy">policy</a>
+    </li> 
+    <li>
+        <a href="#about">about</a>
+    </li>
+     <li>
+        <a href="#end">end</a>
+    </li>   
+</ol>
+<main>
+</main>
+<section>
+    <h1 id="about">About</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+    </p>
+    <br>
+    <a href="#top">Back</a>
+</section>
+<section>
+    <h1 id="services">Services</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+    </p>
+    <br>
+    <a href="#top">Back</a>
+</section>
+<section>
+    <h1 id="policy">policy</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis
+         suscipit quidem, nulla, facere molestias non quia vel explicabo maxime iusto nisi
+          accusantium cupiditate debitis aliquid voluptate libero quam in?
+    </p>
+    <br>
+    <a href="#top">Back</a>
+</section>
+<a href="#top">Back</a>
+<footer id="end" style="background:black;height:100px;color:white;
+clear: both; text-align: center;"> Footer </footer>
+</body>
+</html>

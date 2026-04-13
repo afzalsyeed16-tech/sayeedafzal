@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head><title>Photo Gallery</title></head>
+
+<header>
+Web Photo Gallery
+</header>
+
+<style>
+
+@keyframes zoom{
+
+from{transform:scale(0);}
+to{transform:scale(1);}
+
+}
+
+
+header{
+width:50%;
+background:black;
+color:white;
+margin:auto;
+text-align:center;
+padding:10px;
+font-size:50px;
+box-shadow:10px 10px 10px grey;
+font-family:arial black;
+margin-bottom:20px;
+
+
+}
+
+.picstyle{
+width:200px;
+height:200px;
+margin:40px;
+box-shadow:10px 10px 10px grey;
+border-radius:40px;
+transition:0.5s;
+animation:zoom 1s;
+
+}
+
+.picstyle:hover{
+
+transform:scale(1.50) rotate(360deg);
+border-radius:100px;
+
+}
+
+main{
+
+witdh:80%;
+magin-auto;
+
+}
+
+</style>
+
+<body>
+
+<main>
+
+<a href="p1bg.html">
+<img src="images/background1.jpeg" class="picstyle"></a>
+
+<a href="p2bg.html">
+<img src="images/background2.jpg" class="picstyle"></a>
+
+<a href="p3bg.html">
+<img src="images/background3.jpeg" class="picstyle"></a>
+
+<a href="p4bg.html">
+<img src="images/background4.jpg" class="picstyle"></a>
+
+<a href="p5bg.html">
+<img src="images/background5.jpg" class="picstyle"></a>
+
+<a href="p6bg.html">
+<img src="images/background6.jpg" class="picstyle"></a>
+
+
+
+</main>
+
+</body>
+
+
+<footer>
+
+</footer>
+</html>
