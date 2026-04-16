@@ -1,0 +1,65 @@
+
+.mystyle{
+background: #ff3c42;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #c8ffc8;
+}
+
+.mystyle a{
+
+    color: #c8ffc8;
+    text-decoration: none;
+}
+
+#backbutton a{
+display: inline-block;
+border: #ff3c42 solid 2px;
+border-radius: 5px;
+padding: 4px 10px;
+text-decoration: none;
+color: black;
+font-size: 18px;
+background: white;
+
+}
+
+#backbutton {
+display: inline-block;
+margin-top: 20px;
+padding-left: 12px;
+
+}
+
+#buttonarea{
+background: #014131;
+padding-bottom: 19px;
+}
+
+.projects{
+
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    padding: 20px;
+    margin-top: -20px;
+    height: 20%;
+    margin: auto;
+    justify-content: center;
+    background-color: #014131;
+    width: 100%;
+
+}
+.projectstyle{
+height: 450px;
+border-radius: 10px;
+box-shadow: 1px 1px 16px rgb(255, 255, 255);
+margin-right: 25px;
+
+
+}
