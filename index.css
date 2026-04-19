@@ -57,7 +57,7 @@ color: #f6fafd;
 margin-top: -10px;
 color: #f6fafd;   
 font-size: 12px;
-margin-left: 10px;
+margin-left: 6px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -110,7 +110,7 @@ footer{
 @media only screen and (max-width: 600px) {
   .mystyle {
     flex-direction: row;
-    gap: 60px;
+    gap: 45px;
     font-size: 16px;
     margin-bottom:1px;
     
