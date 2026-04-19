@@ -95,3 +95,18 @@ border-radius: 8px;
 
 }
 
+@media only screen and (max-width: 600px) {
+  .mystyle {
+    flex-direction: row;
+    gap: 30px;
+    font-size: 16px;
+  }
+  #col1, #workimg {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .pfpstyle, .workstyle {
+    height: 200px;
+    width: 200px;
+  }
+}
