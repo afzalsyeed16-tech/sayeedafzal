@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head><title>
+Photo Gallery</title>
+</head>
+<header>
+Web Photo Gallery 
+</header>
+
+<style>
+
+@keyframes zoom{
+
+from{transform:scale(0);}
+to{transform:scale(1);}
+
+}
+
+
+ header{
+background:black;
+color:white;
+width:50%;
+margin:auto;
+text-align:center;
+font-family:arial black;
+font-size:50px;
+box-shadow:10px 10px 10px grey;
+border-radius:5px;
+padding:10px;
+margin-bottom:30px;
+
+
+}
+
+.picstyle{
+
+width:200px;
+height:200px;
+margin:40px;
+box-shadow:10px 10px 10px grey;
+border-radius:50px;
+transition:0.5s;
+animation:zoom 1s;
+
+
+
+
+}
+
+.picstyle:hover{
+
+transform:scale(1.5) rotate(360deg);
+border-radius:100px;
+
+}
+
+main{
+width:80%;
+margin:auto;
+
+}
+
+
+</style>
+
+<body>
+
+<main>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+<a href="https//www.yahoo.com">
+<img src="images/background1.jpeg" class="picstyle">
+</a>
+
+
+</main>
+
+</body>
+
+<footer></footer>
+</html>

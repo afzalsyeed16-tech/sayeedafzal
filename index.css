@@ -1,20 +1,20 @@
 
 .mystyle{
-background: #ff3c42;
+background: #0a1931;
     display: flex;
     justify-content: center;
     gap: 100px;
     margin: auto;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #c8ffc8;
+    color: #f6fafd;
     cursor: pointer;
     a:link{text-decoration: none;}
 }
 
 .mystyle a{
 
-    color: #c8ffc8;
+    color: #f6fafd;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ background: #ff3c42;
 display:flex;
 flex-direction:row;
 margin-top:0.5px;
-background-color:#014131;
+background-color:#0a1931;
 flex-wrap:wrap;
 justify-content: center;
 
@@ -32,7 +32,7 @@ justify-content: center;
 .pfpstyle{
 height:300px;
 border-radius:300px;
-box-shadow:1px 1px 16px rgb(241, 238, 238);
+box-shadow:1px 1px 16px #f6fafd;
 margin-top: 16px;
 
 }
@@ -43,34 +43,36 @@ flex-direction: column;
 align-items: center;
 font-family:lucida bright;
 font-size: 18px;
-background: #014131;
-color: #c8ffc8;
+background: #0a1931;
+color: #f6fafd;
 
 }
 
 #col2 h1{
- margin-top: 20px;    
+ margin-top: 20px; 
+ 
    
 }
 #col2 p{
-    margin-top: -10px;
-font-size: 14px;
-margin-left: 30px;
+margin-top: -10px;
+color: #f6fafd;   
+font-size: 12px;
+margin-left: 10px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #workcontainer{
-    background: #014131;
+    background: #0a1931;
 }
 
 #work{
 display: flex;
 flex-direction: column;
 align-items: center;
-background: #014131;
-color: #c8ffc8;
+background: #0a1931;
+color: #f6fafd;
 padding-top: 30px;
-font-size: 18px;
+font-size: 22px;
 font-family:lucida bright;
 
 }
@@ -80,33 +82,54 @@ font-family:lucida bright;
     display: flex;
    justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
     flex-direction: row;
-    gap: 25px;
     padding: 20px;
-    margin-top: -20px;
+    margin-top: -5px;
+    padding-bottom: 50px;
     
    
 }
 .workstyle{
-height: 450px;
-width: 450px;
-box-shadow: #ffffff 1px 2px 16px;
+height: 400px;
+width: 400px;
+box-shadow: #f6fafd 1px 2px 16px;
 border-radius: 8px;
 
+
+}
+
+footer{
+    background-color: #0a1931;
+    color: #f6fafd;
+    text-align: center;
+    padding: 10px;
+    margin-top: -5px;
 }
 
 @media only screen and (max-width: 600px) {
   .mystyle {
     flex-direction: row;
-    gap: 30px;
+    gap: 60px;
     font-size: 16px;
+    margin-bottom:1px;
+    
   }
   #col1, #workimg {
     flex-direction: row;
-    gap: 15px;
+    gap: 50px;
+    
   }
   .pfpstyle, .workstyle {
-    height: 200px;
-    width: 200px;
+    height: 310px;
+    width: 310px;
   }
+#col2 h1 {
+    font-size: 42px;
+  }
+  #col2 p {
+    font-size: 10px;
+    text-align: center;
+  }
+
 }

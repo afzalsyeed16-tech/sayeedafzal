@@ -1,42 +1,42 @@
 
 .mystyle{
-background: #ff3c42;
+background: #0a1931;
     display: flex;
     justify-content: center;
     gap: 100px;
     margin: auto;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #c8ffc8;
+    color: #f6fafd;
 }
 
 .mystyle a{
 
-    color: #c8ffc8;
+    color: #f6fafd;
     text-decoration: none;
 }
 
 #backbutton a{
 display: inline-block;
-border: #ff3c42 solid 2px;
-border-radius: 5px;
-padding: 4px 10px;
+border: #f6fafd solid 2px;
+border-radius: 13px;
+padding: 3px 15px;
 text-decoration: none;
 color: black;
-font-size: 18px;
+font-size: 20px;
 background: white;
 
 }
 
 #backbutton {
 display: inline-block;
-margin-top: 20px;
-padding-left: 12px;
+margin-top: 15px;
+padding-left: 15px;
 
 }
 
 #buttonarea{
-background: #014131;
+background: #0a1931;
 padding-bottom: 19px;
 }
 
@@ -45,13 +45,13 @@ padding-bottom: 19px;
   display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 25px;
+    gap: 50px;
     padding: 20px;
     margin-top: -20px;
     height: 20%;
     margin: auto;
     justify-content: center;
-    background-color: #014131;
+    background-color: #0a1931;
     width: 100%;
 
 }
@@ -60,6 +60,38 @@ height: 450px;
 border-radius: 10px;
 box-shadow: 1px 1px 16px rgb(255, 255, 255);
 margin-right: 25px;
+margin-bottom: 40px;
 
+
+}
+
+footer{
+    background-color: #0a1931;
+    color: #f6fafd;
+    text-align: center;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mystyle {
+    flex-direction: row;
+    gap: 60px;
+    font-size: 16px;
+    margin-bottom:1px;
+}
+
+.button a{
+    border: black solid 2px;
+}
+.projectstyle{
+height: 350px;
+margin-bottom: 50px;
+}
+
+.projects{
+  gap: 30px;
+}
 
 }
