@@ -12,6 +12,7 @@ body{
 
 padding: 0px;
 margin: 0px;
+background: #0a1931;
 
 }
 
@@ -20,12 +21,12 @@ header{
     font-size: 30px;
     text-transform: uppercase;
     font-family: arial black;
-    background: rgb(57, 82, 192);
+    background: rgb(241, 102, 9);
     color: white;
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
-    box-shadow: 10px 10px 10px  rgb(230, 61, 95);
+    box-shadow: 2px 8px 15px #f6fafd;
     margin-bottom: 40px;
     margin-top: 20px;
 }
@@ -36,10 +37,39 @@ body{
     padding: 30px;
 }
 
+#backbutton a{
+display: inline-block;
+border: #f6fafd solid 2px;
+border-radius: 13px;
+padding: 3px 15px;
+text-decoration: none;
+color: #0a1931;
+font-size: 18px;
+background: white;
+
+}
+
+#backbutton {
+display: inline-block;
+margin-top: 20px;
+padding-left: 12px;
+margin-bottom: 30px;
+
+}
+
+#buttonarea{
+background: #0a1931;
+padding-bottom: 19px;
+}
+
 main ul li:hover{
 
     background: rgba(26, 185, 189, 0, 40);
 width: 100px;
+}
+
+#space{
+    margin-bottom: 20px;
 }
 
 </style>
@@ -51,14 +81,19 @@ using Meadia(Audio/Video) in web page
 
 <body>
   <main>
+        <div id="buttonarea"> 
+ <div id="backbutton">  
+ <a href="practicepage.css">Back</a>
+ </div>  
+ </div> 
 
-<audio controls width="200" height="200" autoplay loop muted>
-    <source src="images/aud1.mp3" type="audio/mp3">
+<audio controls width="40%" height="40%" autoplay loop muted>
+    <source src="images/aud2.mp3" type="audio/mp3">
     <h1>Update Your Browser/ This audio is not supported in your web browser</h1>
 </audio>
-
-<video controls width="700" height="700" autoplay loop muted>
-    <source src="images/vid1.mp4" type="video/mp4">
+<div id="space"></div>
+<video controls width="100%" height="100%" autoplay loop muted>
+    <source src="images/vid2.mp4" type="video/mp4">
     <h1>Update Your Browser/ This audio is not supported in your web browser</h1>
 </video>
   </main>  
