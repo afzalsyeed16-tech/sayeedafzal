@@ -16,6 +16,12 @@ background: #0a1931;
     text-decoration: none;
 }
 
+h5:hover{
+color: rgb(243, 55, 9);
+text-decoration: underline ;
+
+}
+
 #backbutton a{
 display: inline-block;
 border: #f6fafd solid 2px;
@@ -71,6 +77,12 @@ align-items: center;
     font-size: 25px;
 }
 
+.tablestyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
+}
+
  .gallerystyle{
 display: flex;
 justify-content: center;
@@ -90,6 +102,13 @@ align-items: center;
     text-decoration: none;
     color: #0a1931;
     font-size: 25px;
+}
+
+
+.gallerystyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
 }
 
  .loginstyle{
@@ -113,6 +132,12 @@ align-items: center;
     font-size: 25px;
 }
 
+.loginstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
+}
+
 .responsivepfstyle{
 display: flex;
 justify-content: center;
@@ -132,6 +157,12 @@ align-items: center;
     text-decoration: none;
     color: #0a1931;
     font-size: 25px;
+}
+
+.responsivepfstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
 }
 
 .liststyle{
@@ -155,6 +186,12 @@ align-items: center;
     font-size: 25px;
 }
 
+.liststyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
+}
+
 .bookmarkstyle{
 display: flex;
 justify-content: center;
@@ -174,6 +211,12 @@ align-items: center;
     text-decoration: none;
     color: #0a1931;
     font-size: 25px;
+}
+
+.bookmarkstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
 }
 
 .advdstyle{
@@ -197,6 +240,12 @@ align-items: center;
     font-size: 25px;
 }
 
+.advdstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
+}
+
 .divstyle{
 display: flex;
 justify-content: center;
@@ -218,6 +267,11 @@ align-items: center;
     font-size: 25px;
 }
 
+.divstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+
+}
 
 footer{
     background-color: #0a1931;

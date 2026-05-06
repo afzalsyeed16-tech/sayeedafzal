@@ -16,6 +16,13 @@ background: #0a1931;
     text-decoration: none;
 }
 
+h5:hover{
+color: rgb(243, 55, 9);
+text-decoration: underline ;
+
+}
+
+
 #backbutton a{
 display: inline-block;
 border: #f6fafd solid 2px;
@@ -56,13 +63,16 @@ padding-bottom: 19px;
 
 }
 .projectstyle{
-height: 450px;
+height: 350px;
 border-radius: 10px;
 box-shadow: 1px 1px 16px rgb(255, 255, 255);
 margin-right: 25px;
 margin-bottom: 40px;
+}
 
-
+.projectstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
 }
 
 footer{
@@ -86,12 +96,13 @@ footer{
     border: black solid 2px;
 }
 .projectstyle{
-height: 350px;
+height: 360px;
 margin-bottom: 50px;
 }
 
 .projects{
   gap: 30px;
+  
 }
 
 }

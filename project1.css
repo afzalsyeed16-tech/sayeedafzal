@@ -1,0 +1,325 @@
+
+body{
+
+margin: 0px;    
+
+}
+
+.mystyle{
+display: flex;
+justify-content: center;
+margin: auto;
+gap:70px;
+font-family: "Poppins";
+font-size: 16px;
+color: #001f39;
+margin-top: 10px;
+ 
+}
+
+.imgstyle{
+margin-top: -73px;
+width: 100%;
+height: auto;
+
+}
+
+.logostyle{
+display: flex;
+justify-content: left;
+width: 240px;
+height:180px; 
+position: absolute;
+z-index:5; 
+top:-37px;
+margin-left:28px;
+}
+
+#headingstyle{
+display: flex;
+flex-direction: column;
+margin-top: -580px;  
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+font-size: 22px;
+color: #001f39;
+}
+
+#headingstyle h1{
+font-weight: bolder;
+
+}
+
+.subhead{
+margin-top: -37px;
+
+}
+
+#subheadstyle{
+display: flex;
+flex-direction: column;
+margin-top: -38px;  
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+color:black;
+font-weight: 300;
+}
+
+#subheadstyle h4{
+font-weight: 500;
+    
+}
+
+.subhead2{
+    margin-top:-24px;
+}
+
+#ctabutton{
+display: flex;
+margin-left: 70px;
+gap: 25px;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.quotbut{
+border: 1.5px solid #001f39;
+padding: 10px 30px;
+background: #005994;
+color: white;
+border-radius: 7px;
+font-weight: 400;
+}
+
+.contbut{
+border: 1.5px solid #001f39;
+padding: 10px 30px;
+color: #001f39;
+border-radius: 7px;
+font-weight: 400;
+}
+
+#aboutcontainer{
+flex-wrap: wrap; 
+background: white;
+height: 190px;
+width: auto;
+
+
+}
+
+#abtcomp{
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+color: #005994;    
+margin-top: 140px;
+}
+
+#abthead{
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+font-size: 26px;
+margin-top: -18px;
+}
+
+#abthead2{
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+margin-top: -38px;
+font-size: 26px;
+}
+
+#aboutus h5{
+display: flex;
+width:23%;
+margin-left: 70px;
+font-family: 'Poppins', sans-serif;
+font-weight:400;
+margin-top: -20px;
+text-align: justify;
+font-size: 12px;
+}
+
+.premicon{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-200px;
+left:470px;
+width:10%;
+height: auto;
+}
+
+#premheading{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-240px;
+left:485px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+}
+
+#subprem{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 10%;
+text-align: center;
+top:-254px;
+left:471px;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+
+}
+
+.globicon{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-436px;
+left:670px;
+width:10%;
+height: auto;
+}
+
+#globheading{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-476px;
+left:698px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+}
+
+#subglob{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 10%;
+text-align: center;
+top:-490px;
+left:673px;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+
+}
+
+.coldchainicon{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-653px;
+left:870px;
+width:10%;
+height: auto;
+}
+
+#coldchainhead{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-693.5px;
+left:875px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+}
+
+#subcoldchain{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 10%;
+text-align: center;
+top:-707px;
+left:875px;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+
+}
+
+.trusticon{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-889px;
+left:1077px;
+width:10%;
+height: auto;
+}
+
+#trusthead{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+top:-929.5px;
+left:1085px;
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+}
+
+#subtrust{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 10%;
+text-align: center;
+top:-942px;
+left:1085px;
+font-weight: 400;
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+
+}
+
+#ourproducts{
+background: #f5f9fc;
+height: auto;
+}
+
+#producth1{
+text-align: center;
+font-family: 'Poppins', sans-serif;
+color: #005994;
+padding-top: 25px;
+font-size: 14px;
+font-weight: 600;
+}
+
+#producth2{
+text-align: center;
+font-family: 'Poppins', sans-serif;
+color: #001f39;
+margin-top: -10px;
+font-size: 22px;
+
+}
+
+.productlist{
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    margin-top: -20px;
+    height: 10%;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.fishstyle{
+height: 190px;
+width: 255px;
+border-radius: 10px;
+box-shadow: 1px 1px 16px rgb(255, 255, 255);
+margin-right: 25px;
+margin-bottom: 40px;
+
+}
+
