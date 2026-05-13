@@ -380,6 +380,32 @@ align-items: center;
 animation-duration: 2s;
 }
 
+.button1style{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+border: #f6fafd solid 3px;
+width: 250px;
+height: 250px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: #f6fafd 1px 1px 16px;
+align-items: center;
+
+
+ }
+
+.button1style a{
+    text-decoration: none;
+    color: #0a1931;
+    font-size: 25px;
+}
+
+.button1style:hover{
+ animation: pulse;
+animation-duration: 2s;
+}
+
 
 
 

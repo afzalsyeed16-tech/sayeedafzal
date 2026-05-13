@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+background: #0a1931;
+text-align: center;
+
+}
+
+
+</style>
+
+<body>
+
+
+    <h1 id="myheading" style="font-family: arial black;">Welcome to Java Script </h1>
+    <script src="mylib.js"></script>
+    <button id="b1">SUM</button>
+<script>
+
+var l=document.createElement("login")
+document.body.appendChild(l)
+l.innerHTML="Register Your Name"
+l.style.background="red"
+l.style.color="white"
+l.style.fontFamily="arial black"
+l.style.padding="6px 20px"
+l.style.borderRadius="20px"
+l.style.border="1.5px solid white"
+l.style.cursor="pointer"
+l.style.marginLeft="30px"
+l.style.textAlign="center"
+l.onclick=action
+
+var h=document.getElementById("myheading")
+h.style.color="white"
+h.style.fontSize="40px"
+h.style.cursor="pointer"
+h.onclick=welcome
+
+
+function sum(a,b,c){
+a=prompt("Enter First Number","0")
+b=prompt("Enter Second Number","0")
+c=parseInt(a)+parseInt(b)
+alert(c)
+
+}
+
+var b1=document.getElementById("b1")
+b1.onclick=sum
+b1.style.background="red"
+b1.style.color="white"
+b1.style.fontFamily="arial black"
+b1.style.padding="5px 30px"
+b1.style.borderRadius="20px"
+b1.style.border="1.5px solid white"
+b1.style.cursor="pointer"
+b1.style.textAlign="center"
+
+
+</script>
+
+</body>
+</html>
