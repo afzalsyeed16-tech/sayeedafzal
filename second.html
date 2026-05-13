@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+window.document.bgColor="red"
+window.document.fgcolor="green"
+
+
+window.document.write("<h1 style='background:white;padding:10px;margin:5px;box-shadow:10px 10px 10px gray'>welcome to JavaScript</h1>")
+alert("Login to Continue")
+var mycolor=prompt("set background color","pink")
+document.body.style.background = mycolor
+document.title="JavaScript"
+var ans=confirm("Want to Close.....?")
+if(ans==true){
+
+    window.close()
+}
+else{
+alert("window will not close since you had pressed cancel")
+
+}
+</script>
+
+
+
+
+</body>
+</html>
