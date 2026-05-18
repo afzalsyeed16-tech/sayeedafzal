@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<header>
+
+ <h1>Calculator</h1>
+    
+</header>
+
+<style>
+
+header{
+display: flex;
+flex-wrap: wrap;
+font-family: arial black;
+font-size: larger;
+font-weight: bold;
+}
+
+
+
+body{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+}
+
+
+#main-box{
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+border: 2px solid black;
+border-radius: 10px;
+padding: 40px 0px;
+align-items: center;
+width:23%;
+background: lightgray ;
+
+}
+
+#input-box{
+
+display: flex;
+flex-direction: column;
+width: 50%;
+justify-content: center;
+
+}
+
+
+#b1-box{
+display: flex;
+flex-wrap: wrap;
+gap:8px;
+justify-content: center;
+
+}
+
+
+</style>
+
+
+<body>
+
+    
+<div id="main-box">
+<div id="input-box">
+No 1<input style="border-radius:3px;padding: 4px 5px;"type="Number" id="t1" value="0">
+<div style="margin-top:15px;"></div>
+No 2<input style="border-radius:3px; padding: 4px 5px;"type="Number" id="t2" value="0">
+<div style="margin-top:15px"></div>
+Total<input style="border-radius:3px; padding: 4px 5px;" id="r" type="Number" value="0">
+<div style="margin-top:20px;"></div>
+</div>
+<div id="b1-box">
+<button style="padding: 2px 7px;" onclick="f1()">+</button>
+<button style="padding: 2px 7px;" onclick="f2()">-</button>
+<button style="padding: 2px 7px;" onclick="f3()">*</button>
+<button style="padding: 2px 7px;" onclick="f4()">/</button>
+</div>
+</div>
+<script>
+
+var n1 = document.getElementById("t1")
+var n2=document.getElementById("t2")
+var n3=document.getElementById("r")
+
+
+function f1()
+{
+
+var sum=parseInt(n1.value)+parseInt(n2.value)
+n3.value=sum
+
+}
+
+function f2()
+{
+
+var sum=parseInt(n1.value)-parseInt(n2.value)
+n3.value=sum
+
+}
+
+function f3()
+{
+
+var sum=parseInt(n1.value)*parseInt(n2.value)
+n3.value=sum
+
+}
+
+function f4()
+{
+
+var sum=parseInt(n1.value)/parseInt(n2.value)
+n3.value=sum
+
+}
+
+
+</script>    
+
+
+</body>
+</html>
