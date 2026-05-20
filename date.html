@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#clock{
+
+    background: darkblue;
+    color:white;
+    display: flex;
+    gap: 20px;
+    padding:10px;
+    text-align: center;
+    font-size:larger;
+    font-weight:bolder;
+    font-family: sans-serif;
+    width:200px;
+    margin:auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
+</style>
+
+
+<body>
+ 
+<div id="clock">Date & Time</div>    
+<button onclick="st()">Start Clock</button>
+<button onclick="sto()">Stop Clock</button>
+    
+<script>
+
+    function show(){
+var d = new Date()
+var t=document.getElementById("clock")
+t.innerHTML= d.toLocaleDateString()
+t.innerHTML+=d.toLocaleTimeString()
+
+}
+
+var timer
+function st(){
+timer=setInterval("show()",1000)
+
+}
+
+function sto(){
+
+clearInterval(timer)
+
+
+}
+
+
+</script>    
+
+    
+</body>
+</html>
