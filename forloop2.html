@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2 style="font-family: arial black; font-size:50px; text-align: center; color:rgb(19, 19, 19); background:rgb(187, 187, 242);">FOR LOOP IMAGES</h2>
+
+
+<style>
+
+.pic{
+
+width:30%;
+box-shadow:10px 10px 10px gray;
+margin:10px;
+transition:0.5s;
+cursor: pointer;
+
+
+}
+
+
+
+
+</style>    
+
+<script>
+
+//Create instance of image class
+
+function preload(){
+
+
+for(var i=1;i<=6;i++){
+
+var p=new Image()
+document.body.appendChild(p)
+p.className="pic"
+p.src="images/ima"+i+".jpg"
+
+
+p.onmouseover=function()
+{
+
+this.style.width="35%"
+
+}
+
+p.onmouseout=function(){
+
+this.style.width="30%"
+
+}
+
+}
+    
+}
+    
+document.addEventListener("load",preload())
+
+</script>
+
+
+
+</body>
+</html>

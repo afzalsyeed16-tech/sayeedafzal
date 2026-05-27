@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+button{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: auto;
+margin-top: 20px;
+text-align: center;
+font-size: 20px;
+padding:20px 80px;
+border-radius: 10px;
+font-family: arial black;
+box-shadow: 1px 3px 20px gray;
+}
+
+
+body h1{
+
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 40px;
+background: white;
+padding: 10px;
+border-radius: 12px;
+box-shadow: 4px 4px 20px gray;
+
+}
+
+</style>
+
+<body>
+
+ <h1>Using Random And SetInterval</h1>   
+
+<button>
+   STOP
+</button>    
+
+<script>
+    var t
+var r,g,b,c
+
+function show()
+{
+
+r=Math.round (Math.random()*255)
+g=Math.round(Math.random()*255)
+b=Math.round(Math.random()*255)
+c=`rgb(${r},${g},${b})`
+document.body.style.background=c
+document.title=c
+}
+
+
+t=setInterval("show()",1000)
+document.body.onclick=function()
+{
+
+clearInterval(t)
+alert("Set Interval is stop now")
+
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
