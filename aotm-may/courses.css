@@ -1,0 +1,549 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    height: 60px;
+    font-size:13px;
+    background: #021b4e;
+    color:white;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+}
+
+.nav-links a{
+    color: #f6fafd;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #ffd500;
+    transition: 0.3s;
+}
+
+.logostyle{
+    height:65px;
+    width: 9%;
+    margin-left: -20px;
+    padding: 4px;;
+}
+
+.iconstyle{
+    display: none;
+    height:25px;
+    width: 2%;
+    margin-top:4px;
+    
+}
+
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    z-index: 9999;
+    position: relative;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:white;
+    border-radius:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:85px;
+    margin-left: 80px;
+
+}
+
+#button{
+   
+padding:4.5px 25px;
+border: 1px solid white;
+border-radius: 20px;
+background: #ffd500;
+color:rgb(0, 0, 0);
+font-weight: bolder;
+}
+
+#button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
+#course-text button:hover{
+background: white;
+color: black;
+transition: 0.25s;
+}
+
+#course-section{
+    height:100vh;
+    background-image:url("images/courses-page-img.PNG");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+#course-text{
+    position:absolute;
+    top:150px;
+    left:50px;
+}
+
+#course-text h1{
+    font-size:60px;
+    color:#FFD500;
+    width:600px;
+}
+
+#course-text p{
+    font-size:20px;
+    color:white;
+    width:500px;
+    margin-top:20px;
+}
+
+#course-text button{
+    width:220px;
+    height:55px;
+    margin-top:30px;
+    border:none;
+    border-radius:40px;
+    background:#FFD500;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+#pop-courses{
+   padding: 80px 5%;
+   background: #f8f9fc;
+}
+
+#pop-courses h2{
+ text-align:center;
+ color:#021b4e;
+ font-family: poppins, sans-serif;
+ font-weight: 700;
+ font-size: 40px;
+}
+
+#pop-courses h3{
+ text-align:center;
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color:rgba(128, 128, 128, 0.862);
+ font-size: 20px;
+ font-weight: 500;
+ margin-bottom: 20px;
+}
+
+
+.course-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+width:220px;
+background:white;
+border-radius:20px;
+padding:22px;
+text-align:center;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+margin-top:20px;
+}
+
+.card img{
+width:90px;
+height:90px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.card h3{
+font-family: poppins, sans-serif;
+color:#0840b8;
+margin-bottom:10px;
+
+}
+
+.card p{
+color:#555;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.card a{
+text-decoration:none;
+background:#0b4ddb;
+color:white;
+padding:8px 18px;
+border-radius:30px;
+display:inline-block;
+background: linear-gradient(45deg, #0b2e7b, #064ce4);
+}
+
+
+#student-work{
+   padding: 80px 5%;
+   background: #f8f9fc;
+}
+
+#student-work h2{
+ text-align:center;
+ color:#021b4e;
+ font-family: poppins, sans-serif;
+ font-weight: 700;
+ font-size: 40px;
+}
+
+#student-work h3{
+ text-align:center;
+ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color:rgba(128, 128, 128, 0.862);
+ font-size: 20px;
+ font-weight: 500;
+ margin-bottom: 20px;
+}
+
+
+.student-work-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+.work-card{
+width:220px;
+background:white;
+border-radius:20px;
+padding:22px;
+text-align:center;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+margin-top:20px;
+}
+
+
+.work-card img{
+width:200px;
+height:200px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.cta{
+
+width:90%;
+margin:50px auto;
+background: linear-gradient(90deg, #0b2e7b, #064ce4);
+padding:25px 45px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 15px;
+margin-top: -50px;
+}
+
+.cta-left{
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+.icon{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+}
+
+
+.icon img{
+
+width: 90px;
+height: 90px;
+background: white;
+border-radius: 50%;
+padding: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.cta-text h2{
+color: white;
+font-size: 30px;
+margin-bottom: 7px;
+font-family: poppins, sans-serif;
+font-weight: 700;
+}
+
+.cta-text p{
+color: white;
+font-size: 20px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.cta-button{
+background:white;
+color:0d5eff;
+padding: 15px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-family: poppins, sans-serif;
+font-weight: 600;
+
+}
+
+#footer{
+    width: 100%;
+    background: #021b4e;
+    overflow: hidden;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    
+}
+
+.footer-about{
+    width: 320px;
+}
+
+.footer-logo{
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.footer-about p{
+    color: white;
+    font-size: 17px;
+    font-family: poppins, sans-serif;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h2{
+    color: #FFD500;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-family: poppins, sans-serif;
+}
+
+.footer-links p{
+    color: white;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-family: poppins, sans-serif;
+}
+
+.footer-bottom{
+    border-top: 1px solid gray;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: white;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+}
+
+
+@media screen and (max-width:480px){
+
+.navbar{
+    position:relative;
+    padding:10px;
+}
+
+.logostyle{
+    width:70px;
+    height:auto;
+    margin-left:0;
+}
+
+.navbar h3{
+    font-size:15px;
+}
+
+.hamburger{
+    display:flex;
+}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#021b4e;
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+    padding:20px 0;
+    z-index:999;
+    margin-left:0;
+}
+
+#menu-toggle:checked ~ .nav-links{
+    display:flex;
+}
+
+#course-section{
+    height:500px;
+    background-size:cover;
+    background: position 45% center;
+}
+
+#course-text{
+    position:absolute;
+    top:140px;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+#course-text h1{
+    font-size:45px;
+    width:100%;
+}
+
+#course-text p{
+    width:100%;
+    font-size:15px;
+    margin-top:15px;
+}
+
+#course-text button{
+    width:190px;
+    height:45px;
+    font-size:16px;
+}
+
+#pop-courses h2{
+    font-size:30px;
+}
+
+#pop-courses h3{
+    font-size:16px;
+}
+
+.course-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:85%;
+}
+
+#student-work h2{
+    font-size:30px;
+}
+
+#student-work h3{
+    font-size:16px;
+}
+
+.student-work-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.work-card{
+    width:85%;
+}
+
+.work-card img{
+    width:100%;
+    height:auto;
+}
+
+.cta{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    gap:20px;
+}
+
+.cta-left{
+    flex-direction:column;
+}
+
+.icon img{
+    width:70px;
+    height:70px;
+}
+
+.cta-text h2{
+    font-size:22px;
+}
+
+.cta-text p{
+    font-size:15px;
+}
+
+.cta-button{
+    padding:12px 25px;
+}
+
+.footer-box{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.footer-about{
+    width:100%;
+}
+
+.footer-logo{
+    width:140px;
+}
+
+.footer-links{
+    width:100%;
+}
+
+}
