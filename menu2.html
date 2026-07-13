@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+
+#nav{
+
+display: flex;
+justify-content: space-evenly;
+
+}
+
+
+#m,#m2,#m3{
+
+width: 80px;
+margin-top: 3px;
+background: red;
+color: rgb(62, 58, 58);
+padding: 0px;
+}
+
+li{
+list-style: none;
+padding: 10px;
+cursor: pointer
+}
+
+li:hover{
+
+background:rgb(240, 238, 235);
+color: red;
+}
+
+.open_close{
+display: none;
+}
+
+
+</style>
+
+
+<body> 
+
+<div id="nav"> 
+    
+<div>
+<button onclick="show_hide_menu(event)" id="menu1">Main
+</button>  
+
+<ol id="m" class="open_close">
+<li>Main</li>
+<li>Project</li>
+<li>Practice</li>
+</ol>
+</div>    
+
+
+<div>
+<button onclick="show_hide_menu(event)" id="menu2">Project   
+</button>
+
+<ol id="m2" class="open_close">
+<li>HTML</li>
+<li>JavaScript</li>
+<li>Bootstrape</li>
+</ol>
+</div>
+
+
+<div>
+<button onclick="show_hide_menu(event)" id="menu3">Social Media    
+</button>
+
+<ol id="m3" class="open_close">
+<li>Youtube</li>
+<li>Instagram</li>
+<li>Facebook</li> 
+</ol>
+</div>
+
+</div>
+
+<script>
+
+//var menu_visible = false;
+var m1=document.getElementById("m");
+
+
+function show_hide_menu(event){
+
+var mid = event.target.id
+
+m1.classList.add("open_close");
+m2.classList.add("open_close");
+m3.classList.add("open_close");
+
+
+
+switch(mid){
+
+case "menu1":
+    m1.classList.remove("open_close");
+    document.title="menu1"
+    break;
+ 
+case "menu2":
+    m2.classList.remove("open_close");
+    document.title="menu2"
+    break;
+    
+case "menu3":
+    m3.classList.remove("open_close");
+    document.title="menu3"
+    break;    
+
+
+
+}
+
+}
+
+window.onclick=function(event){
+//alert(event.target)    
+if(event.target=="[object HTMLhtmlElement]"||(event.target=="[object HTMLHtmlElement]")||(event.target=="[object HTMLDivElement]"))
+{
+m1.classList.add("open_close");
+m2.classList.add("open_close");
+m3.classList.add("open_close");
+
+}
+}
+
+
+</script>
+
+
+</body>
+</html>
