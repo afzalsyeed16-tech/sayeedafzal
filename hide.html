@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+</head>
+<style>
+
+*body{
+
+    background: black;
+
+
+}
+
+
+    li{
+        cursor: pointer;
+    }
+
+
+</style>
+
+<body>
+
+    <ol>
+
+        <li id="Practice">Practice
+            <ol>
+                <li>HTML</li>
+                <li>javascript</li>
+                <li>bootstrap</li>
+                <li>jquery</li>
+            </ol>
+        </li>
+
+
+        <li id="Social media">Social Media
+            <ol>
+                <li>instagram</li>
+                <li>youtube</li>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ol>
+        </li>
+
+        <li id="Project">Project
+            <ol>
+                <li>project 1</li>
+                <li>project 2</li>
+                <li>project 3</li>
+                <li>project 4</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#Practice").click(function () {
+            $("#Practice>ol").toggle("fast")
+
+            })
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>
