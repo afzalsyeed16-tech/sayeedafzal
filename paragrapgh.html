@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+</head>
+
+<style>
+
+#about-sub{
+
+box-shadow: 10px 10px 10px gray;
+padding: 20px;
+
+}
+
+h1{
+width:800px;
+background:blue;
+margin-left: 100px;    
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+padding: 10px;
+box-shadow: 10px 10px 10px gray;
+cursor: pointer;
+
+}
+
+p{
+text-align: center;
+
+
+}
+
+</style>
+
+<body>
+
+<div id="about"> 
+    
+<h1 id="col1">About us</h1>     
+<div id="about-sub"> 
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam rerum vel quam ipsa, quod voluptate perferendis iure corporis cupiditate eos odio, quo qui? Quam reiciendis eum quisquam porro eligendi.
+Ex, eligendi reiciendis. Ullam, in! Sapiente modi porro atque suscipit magni. Sint repellat error dolore vitae modi iusto reiciendis possimus recusandae minus quidem, autem et molestiae? Nam placeat iusto rem!
+Dolor quidem ad rem esse ipsum corporis fugit quod tempora modi veritatis. Officia illo minus dolores laudantium, eligendi eaque similique quos obcaecati praesentium officiis reprehenderit nihil ipsum, magnam eos voluptates.
+Eligendi, explicabo reiciendis. Nesciunt sint excepturi fugit quae totam optio sunt nemo sit sequi commodi est amet voluptatibus itaque aliquid asperiores ab facilis consequuntur voluptatum, ipsa similique tempora debitis. Quos?
+Quas debitis non optio impedit maiores quaerat mollitia dolor consequatur obcaecati placeat, facere blanditiis voluptatum! Adipisci velit accusamus doloribus, quibusdam tenetur nobis. Mollitia ipsum optio iste ab soluta quis eum.
+Nemo porro dolores quae ad, esse minima ullam deleniti incidunt vero tenetur sapiente? Accusantium voluptatem quos, similique quaerat recusandae nam autem enim? Explicabo, quod. Enim asperiores dolor veritatis blanditiis inventore.
+Commodi corporis dolorum, porro aut ex quis laudantium a beatae, maxime voluptas, non iste cumque possimus quas ducimus veniam? Quisquam fuga dicta ut earum reiciendis, a pariatur ea ipsam error?
+Repudiandae aliquam, quis perferendis atque repellendus aliquid ab natus porro eligendi omnis dolore laudantium veritatis libero ad illum cum possimus expedita enim vel eveniet accusantium doloremque? Ad doloribus facere temporibus.
+Hic cumque, accusamus totam sequi sed nam id commodi rerum consectetur veniam expedita voluptate quia necessitatibus quas, dolores non aspernatur repudiandae similique cum! Eum voluptatum placeat similique, quibusdam culpa inventore.
+Fugit numquam eligendi alias cumque exercitationem explicabo aliquid nemo nesciunt libero ipsam dicta magnam quibusdam dolorem, delectus recusandae repellendus ex voluptatum vel dolores a ad distinctio iste nulla asperiores. Non.
+</p>
+</div>  
+
+<h1 id="col2">Projects</h1>     
+<div id="projects-sub"> 
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam rerum vel quam ipsa, quod voluptate perferendis iure corporis cupiditate eos odio, quo qui? Quam reiciendis eum quisquam porro eligendi.
+Ex, eligendi reiciendis. Ullam, in! Sapiente modi porro atque suscipit magni. Sint repellat error dolore vitae modi iusto reiciendis possimus recusandae minus quidem, autem et molestiae? Nam placeat iusto rem!
+Dolor quidem ad rem esse ipsum corporis fugit quod tempora modi veritatis. Officia illo minus dolores laudantium, eligendi eaque similique quos obcaecati praesentium officiis reprehenderit nihil ipsum, magnam eos voluptates.
+Eligendi, explicabo reiciendis. Nesciunt sint excepturi fugit quae totam optio sunt nemo sit sequi commodi est amet voluptatibus itaque aliquid asperiores ab facilis consequuntur voluptatum, ipsa similique tempora debitis. Quos?
+Quas debitis non optio impedit maiores quaerat mollitia dolor consequatur obcaecati placeat, facere blanditiis voluptatum! Adipisci velit accusamus doloribus, quibusdam tenetur nobis. Mollitia ipsum optio iste ab soluta quis eum.
+Nemo porro dolores quae ad, esse minima ullam deleniti incidunt vero tenetur sapiente? Accusantium voluptatem quos, similique quaerat recusandae nam autem enim? Explicabo, quod. Enim asperiores dolor veritatis blanditiis inventore.
+Commodi corporis dolorum, porro aut ex quis laudantium a beatae, maxime voluptas, non iste cumque possimus quas ducimus veniam? Quisquam fuga dicta ut earum reiciendis, a pariatur ea ipsam error?
+Repudiandae aliquam, quis perferendis atque repellendus aliquid ab natus porro eligendi omnis dolore laudantium veritatis libero ad illum cum possimus expedita enim vel eveniet accusantium doloremque? Ad doloribus facere temporibus.
+Hic cumque, accusamus totam sequi sed nam id commodi rerum consectetur veniam expedita voluptate quia necessitatibus quas, dolores non aspernatur repudiandae similique cum! Eum voluptatum placeat similique, quibusdam culpa inventore.
+Fugit numquam eligendi alias cumque exercitationem explicabo aliquid nemo nesciunt libero ipsam dicta magnam quibusdam dolorem, delectus recusandae repellendus ex voluptatum vel dolores a ad distinctio iste nulla asperiores. Non.
+</p>
+</div> 
+
+</div>
+
+  
+
+
+
+<script>
+
+$(document).ready(function(){
+
+$("#about-sub").hide()
+$("#projects-sub").hide()
+
+})
+
+$("#col1").click(function(){
+$("#about-sub").slideToggle("500")
+
+})
+
+$("#col2").click(function(){
+$("#projects-sub").slideToggle("500")
+
+
+})
+
+
+</script>
+
+
+
+
+</body>
+</html>
