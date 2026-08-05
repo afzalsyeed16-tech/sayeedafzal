@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+</head>
+
+<style>
+
+#main{
+
+width:42%;
+height:500px;
+margin:auto;
+overflow:hidden;
+box-shadow:10px 10px 10px gray;
+
+}
+
+
+.pic image{
+
+width:100%;
+height:auto;
+position: relative;
+top:0;
+left:100;
+
+
+}
+
+
+
+</style>
+
+
+
+<body>
+
+    
+<script>
+
+var c=0;
+var t=0;
+
+
+$(document).ready(function(){
+
+setInterval(function runimg(){
+
+$("#pic"+c).slideToggle(1000)
+
+if((c<=1)&&(t==0)){
+
+c++;
+}
+else{
+
+t=1;
+
+}
+
+if((c>=1)&&(t==1)){
+c--;    
+}
+else{
+t=0;
+
+}
+
+document.title=c
+},1000)
+
+})
+
+
+
+
+</script>
+
+<div id="main">
+
+
+<div id="pic1" class="pic">
+<img src="https://img.magnific.com/free-photo/beautiful-lake-mountains_395237-44.jpg?semt=ais_hybrid&w=740&q=80" class="pic">
+</div>
+
+<div id="pic2" class="pic">
+<img src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" >
+</div>
+
+<div id="pic3" class="pic">
+<img src="https://img.magnific.com/free-photo/scenic-view-mountains-lake_53876-138187.jpg?semt=ais_hybrid&w=740&q=80">
+</div>
+
+</div>
+
+
+
+</body>
+</html>
