@@ -969,7 +969,83 @@ align-items: center;
 animation-duration: 2s;
 }
 
+.jqscrollstyle{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+border: #f6fafd solid 3px;
+width: 250px;
+height: 250px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: #f6fafd 1px 1px 16px;
+align-items: center;
 
+
+ }
+
+.jqscrollstyle a{
+    text-decoration: none;
+    color: #0a1931;
+    font-size: 25px;
+}
+
+.jqscrollstyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+}
+
+.imageanistyle{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+border: #f6fafd solid 3px;
+width: 250px;
+height: 250px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: #f6fafd 1px 1px 16px;
+align-items: center;
+
+
+ }
+
+.imageanistyle a{
+    text-decoration: none;
+    color: #0a1931;
+    font-size: 25px;
+}
+
+.imageanistyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+}
+
+.buttonanistyle{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+border: #f6fafd solid 3px;
+width: 250px;
+height: 250px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: #f6fafd 1px 1px 16px;
+align-items: center;
+
+
+ }
+
+.buttonanistyle a{
+    text-decoration: none;
+    color: #0a1931;
+    font-size: 25px;
+}
+
+.buttonanistyle:hover{
+ animation: pulse;
+animation-duration: 2s;
+}
 
 footer{
     background-color: #0a1931;

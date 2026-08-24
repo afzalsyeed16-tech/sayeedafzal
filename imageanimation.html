@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #logo
+        {
+            width:100px;
+            height:20px;
+            background:purple;
+            box-shadow:10px 10px 10px gray;
+            color:white;
+            position:absolute;
+            left:-500px;
+            top:0px;
+            text-align:center;
+            padding:20px;
+            font-family:arial black;
+        }
+
+        body
+        {
+            margin:0;
+            overflow:hidden;
+        }
+
+        #music
+        {
+            position:absolute;
+            width:1px;
+            height:1px;
+            opacity:0;
+            pointer-events:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="logo">
+        TATA HEXA
+    </div>
+
+    <iframe
+        id="music"
+        src="https://t3nzu.bandcamp.com/EmbeddedPlayer/track/giga-chad-theme-phonk-house-version/size=small/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/"
+        frameborder="0"
+        allow="autoplay">
+    </iframe>
+
+    <script>
+
+        var box = document.getElementById("logo")
+
+        $(document).ready(function()
+        {
+            $("#logo").animate({left:"200px"},1000)
+            .delay(1000)
+            .animate({top:"100px",borderRadius:"100px"},1000,changecolor)
+
+            $("#logo").animate({fontSize:"+=10",width:"+=100",height:"+=10px"},1000,blink)
+
+            $("#logo").animate({top:"+=100px",height:"+=50px"},100,setback)
+        })
+
+        function setback()
+        {
+            document.body.style.backgroundImage="url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBzcWhpeXN4aTUyMzdvdXltemc2dXJjOXhkbDMzcW9taDdibW9qMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xhGE4p9ygdQibhjO5G/giphy.gif)"
+
+            setTimeout("openhome()",4000)
+        }
+
+        box.onclick = function()
+        {
+            location.href="https://audio.com/spotify-/audio/passo-bem-solto"
+        }
+
+        function changecolor()
+        {
+            box.style.background="black"
+            box.style.color="cyan"
+        }
+
+        var r,g,b,c
+
+        function blink()
+        {
+            r = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            c = `rgb(${r},${g},${b})`
+
+            box.style.color = c
+
+            setTimeout("blink()",1000)
+        }
+
+        function openhome()
+        {
+            location.href="https://www.youtube.com/"
+        }
+
+    </script>
+
+</body>
+</html>
