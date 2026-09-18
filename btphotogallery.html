@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ 
+  <style>
+  
+  :root{
+
+ --mycolor: --bs-info-rgb;
+
+  }
+
+
+  .mystyle{
+
+background:var(--my-color);
+border-radius:10px;
+
+  }
+
+
+.photo-size{
+
+width:100%;
+height:auto;
+object-fit:cover;
+
+}
+
+.img-thumbnail{
+
+padding:0;
+border:8px solid white;
+border-radius:10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+cursor:pointer;
+transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.img-thumbnail:hover{
+transform:scale(1.05);
+box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
+}
+
+
+  </style>
+
+
+ 
+ 
+  </head>
+  <body>
+    
+  <div class="container-fluid shadow-lg text-uppercase text-center mystyle p-4 mb-5">
+  <h1 class="text-primary">Photo Gallery By Bootstrap</h1>
+  </div>
+
+
+  <div class="row">
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car1.jpg" alt="car1" class=" img-thumbnail img-fluid photo-size">
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car2.jpg" alt="car2" class=" img-thumbnail img-fluid photo-size">
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car3.jpg" alt="car3" class=" img-thumbnail img-fluid photo-size">
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car4.jpg" alt="car4" class=" img-thumbnail img-fluid photo-size">
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car5.jpg" alt="car5" class=" img-thumbnail img-fluid photo-size">
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-4 p-4">
+  <img src="images/car6.jpg" alt="car6" class=" img-thumbnail img-fluid photo-size">
+  </div>
+  </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
